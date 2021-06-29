@@ -1,30 +1,16 @@
-import React,{ Component } from 'react';
-
-//class App extends Component {
-//  render(){
-//
-//    return (
-//      <div>
-//        <label htmlFor="bar">bar</label>
-//        <input type="text" onChange={() =>{console.log("I am clicked.")}} />
-//      </div>
-//    )
-//  }
-//}
+import React from 'react';
 
 const App = () =>{
   return( 
     <div>
-      <Cat />
-      <Cat />
-      <Cat />
-      <Cat />
+      <User name={"Taro"} age={"10"}/>
+      <User name={"Hanako"} age={"5"}/>
     </div>
   )
 }
 
-const Cat = () =>{
-  return <div>Meow!</div>
+const User = (props) =>{
+  return <div>Hi,I am {props.name}, and {props.age}years old!</div>
 }
 
 
